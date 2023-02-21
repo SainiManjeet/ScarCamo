@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+android:orientation="vertical"
+    tools:context=".fragments.MyOrdersFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/toolbar_background">
+
+
+    </RelativeLayout>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/fab_margin"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/nav_header_height">
+
+            <com.scarcamo.custom.CTextViewHeavy
+                android:id="@+id/title"
+                style="@style/CFontHeavy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Top_small_new"
+                android:gravity="center_horizontal"
+                android:text="Please enter your shipping address"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/Text_Size" />
+
+            <TextView
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/title"
+                android:layout_marginTop="@dimen/margin_Top_small_new"
+                android:background="@color/colorGrey" />
+
+
+            <EditText
+                android:id="@+id/yourName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Top_medium_new"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+
+                android:hint="Full Name"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingTop="@dimen/padding_small" />
+
+            <EditText
+                android:id="@+id/mobileNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Top_medium_new"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="Mobile Number"
+
+                android:inputType="numberDecimal"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingTop="@dimen/padding_small" />
+
+            <EditText
+                android:id="@+id/addressLine1ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Top_medium_new"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+
+                android:hint="Address Line 1"
+                android:inputType="text"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingTop="@dimen/padding_small" />
+
+            <EditText
+                android:id="@+id/addressLine2ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Top_medium_new"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+
+                android:hint="Address Line 2"
+                android:inputType="text"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingTop="@dimen/padding_small" />
+
+            <EditText
+                android:id="@+id/cityET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Top_medium_new"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="City"
+
+                android:inputType="text"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingTop="@dimen/padding_small" />
+
+            <EditText
+                android:id="@+id/pinET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Top_medium_new"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="Pin Code"
+
+                android:inputType="text"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingTop="@dimen/padding_small" />
+
+            <EditText
+                android:id="@+id/stateET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_Top_medium_new"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="State"
+
+                android:inputType="text"
+                android:paddingBottom="@dimen/padding_small"
+                android:paddingLeft="@dimen/padding_small"
+                android:paddingTop="@dimen/padding_small" />
+
+            <com.scarcamo.custom.CButtonBold
+                android:id="@+id/sendBtn"
+                style="@style/CFontBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_Top_Large"
+                android:background="@drawable/greenbutton"
+                android:layout_marginLeft="@dimen/padding_VLarge"
+                android:layout_marginStart="@dimen/padding_VLarge"
+                android:layout_marginRight="@dimen/padding_VLarge"
+                android:layout_marginEnd="@dimen/padding_VLarge"
+                android:gravity="center_vertical|center"
+                android:paddingEnd="@dimen/padding_medium"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium"
+                android:paddingStart="@dimen/padding_medium"
+
+                android:text="SAVE"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/Text_Size_medium"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

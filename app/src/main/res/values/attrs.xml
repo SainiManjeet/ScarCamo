@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomFont">
+        <attr name="cFontBold" format="string"/>
+        <attr name="cFontThin" format="string"/>
+        <attr name="cFontHeavy" format="string"/>
+        <attr name="cFontBlack" format="string"/>
+        <attr name="CFontStd" format="string"/>
+    </declare-styleable>
+</resources>

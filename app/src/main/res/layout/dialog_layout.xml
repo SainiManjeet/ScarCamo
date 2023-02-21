@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical" >
+
+    <com.scarcamo.custom.CTextViewHeavy
+        android:id="@+id/txt_dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="@dimen/margin_Top_very_Large"
+        android:layout_marginLeft="@dimen/margin_left_right_Large"
+        android:layout_marginRight="@dimen/margin_left_right_Large"
+        android:text="SKIN TONE CHANGES WITH CLIMATE AND SEASON"
+        android:textColor="@android:color/black"
+        style="@style/CFontStd"
+        android:textStyle="bold"
+        android:textSize="@dimen/Text_Size_medium"
+        />
+
+    <com.scarcamo.custom.CTextViewThin
+        android:id="@+id/text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_right_Large"
+        android:layout_marginRight="@dimen/margin_left_right_Large"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="@dimen/margin_Top_small"
+        android:text="Do you still want to go with previous selection?"
+        android:textColor="@android:color/black"
+        style="@style/CFontThin"
+        android:textSize="@dimen/Text_Size"
+        />
+
+
+    <Button
+        android:id="@+id/btn_yes"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:background="@drawable/greenbutton"
+        android:clickable="true"
+        android:text="Yes"
+        android:textSize="@dimen/Text_Size_medium"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/margin_Top_medium"
+        android:gravity="center_horizontal|center_vertical"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_no"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:textColor="@color/colorBlack"
+
+        android:clickable="true"
+        android:text="No"
+        android:background="@drawable/greenbutton"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="@dimen/margin_Top_medium"
+        android:textSize="@dimen/margin_Top_medium"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="@dimen/margin_Top_very_Large"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/swipe_one"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="invisible"
+    android:layout_gravity="bottom">
+    <com.scarcamo.custom.CTextViewHeavy
+        style="@style/CFontHeavy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOREM IPSUM"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/Text_Size_Large"/>
+    <com.scarcamo.custom.CTextViewHeavy
+        style="@style/CFontHeavy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DOLOR SIT AMET"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/Text_Size_Large"/>
+
+    <com.scarcamo.custom.CTextViewThin
+        style="@style/CFontThin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOREM IPSUM DOLOR SIT AMET"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/Text_Size_medium"/>
+    <com.scarcamo.custom.CTextViewThin
+        style="@style/CFontThin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOREM IPSUM DOLOR SIT AMET"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/Text_Size_medium"/>
+</LinearLayout>
+</LinearLayout>

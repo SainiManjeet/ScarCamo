@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp"
+
+
+    >
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear"
+        android:scaleType="centerInside" />
+
+    <LinearLayout
+        android:id="@id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/product_background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/fab_margin"
+        android:paddingRight="@dimen/fab_margin">
+
+        <com.scarcamo.custom.CTextViewHeavy
+            android:id="@+id/product_name"
+            style="@style/CFontHeavy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_Top_small"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/Text_Size_Large"
+
+            />
+
+        <com.scarcamo.custom.CTextViewHeavy
+            android:id="@+id/product_price"
+            style="@style/CFontHeavy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/Text_Size_Large"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/margin_Top_small"
+            android:layout_marginTop="@dimen/padding_small"
+            android:background="@color/black_shadow" />
+
+        <com.scarcamo.custom.CTextViewHeavy
+            android:id="@+id/product_description"
+            style="@style/CFontHeavy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlack"
+            android:textStyle="italic"
+            android:textSize="@dimen/Text_Size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/margin_Top_small"
+            android:layout_marginTop="@dimen/margin_Top_small"
+            android:background="@color/black_shadow" />
+
+        <RelativeLayout
+            android:layout_width="220dp"
+            android:layout_height="65dp"
+
+            android:layout_gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorPrimary"
+                android:padding="1dp">
+
+                <com.scarcamo.custom.CButtonBold
+                    android:id="@+id/buyBtn"
+                    style="@style/CFontBold"
+                    android:layout_width="220dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:background="@drawable/greenbutton"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="8dp"
+                    android:text="BUY"
+
+                    android:textColor="@color/colorBlack"
+
+                    android:textSize="@dimen/Text_Size_medium" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:background="#FFFFFF"
+                android:visibility="gone"
+                android:src="@drawable/cart" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

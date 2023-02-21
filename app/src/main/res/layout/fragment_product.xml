@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProductFragment"
+    android:background="@color/colorWhite"
+    android:layout_marginTop="?actionBarSize">
+    <TextView
+        android:id="@+id/selectedColor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorGrey"
+        android:text="Your skin tone not selected"
+        android:gravity="center_horizontal|center_vertical"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/productList"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+</FrameLayout>

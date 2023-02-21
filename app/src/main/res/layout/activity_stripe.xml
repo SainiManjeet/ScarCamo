@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?actionBarSize"
+
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_Large"
+        android:paddingTop="@dimen/padding_medium">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/linear"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:id="@+id/productLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/productImage"
+
+            android:orientation="vertical">
+
+            <com.scarcamo.custom.CTextViewHeavy
+                android:id="@+id/product_name"
+                style="@style/CFontHeavy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/Text_Size_medium"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+
+                />
+
+            <com.scarcamo.custom.CTextViewThin
+                android:id="@+id/product_descriptionText"
+                style="@style/CFontThin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:lines="2"
+                android:lineSpacingExtra="4px"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/Text_Size"
+                android:layout_marginEnd="@dimen/margin_left_right_small"
+                android:layout_marginRight="@dimen/margin_left_right_small"
+                android:textStyle="italic"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/productLayout"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:background="#b2b2b2" />
+
+        <com.scarcamo.custom.CTextViewHeavy
+            android:id="@+id/product_price"
+            style="@style/CFontHeavy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="@dimen/Text_Size_price"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_description"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <com.scarcamo.custom.CTextViewThin
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_Top_medium"
+            android:paddingLeft="@dimen/padding_medium"
+            android:text="Payment amount"
+            android:textColor="@color/colorGreyDark"
+            android:textSize="@dimen/Text_Size_Small"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.scarcamo.custom.CTextViewHeavy
+            android:id="@+id/payment_price"
+            style="@style/CFontHeavy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_medium"
+            android:text="$39"
+            android:textColor="@color/colorGreyDark"
+            android:textSize="@dimen/Text_Size_medium"
+            android:visibility="gone" />
+
+        <com.scarcamo.custom.CTextViewHeavy
+            style="@style/CFontHeavy"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/margin_Top_Large"
+            android:text="Shipping Address"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="@dimen/Text_Size_price" />
+
+        <LinearLayout
+            android:id="@+id/addressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:orientation="horizontal"
+
+            android:weightSum="1">
+
+            <com.scarcamo.custom.CTextViewHeavy
+                android:id="@+id/addressText"
+                style="@style/CFontHeavy"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="@dimen/fab_margin"
+
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".6"
+                android:lineSpacingExtra="6dp"
+
+
+                android:text="No Address Found"
+                android:textColor="@color/colorGreyDark"
+                android:textSize="@dimen/Text_Size_vSmall" />
+
+            <com.scarcamo.custom.CButtonBold
+                android:id="@+id/changeAddressBtn"
+                style="@style/CFontBold"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="@dimen/padding_small"
+                android:layout_marginRight="@dimen/padding_small"
+                android:layout_weight=".4"
+                android:background="@drawable/greenbutton"
+                android:layout_gravity="center_vertical"
+
+                android:text="Change Address"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/Text_Size_Small" />
+        </LinearLayout>
+
+        <com.stripe.android.view.CardInputWidget
+            android:id="@+id/card_input_widget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_Top_small"
+            android:paddingEnd="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingStart="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:theme="@style/CardWidgetStyle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_Top_medium">
+            <com.scarcamo.custom.CButtonBold
+                style="@style/CFontBold"
+                android:id="@+id/make_payment"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/greenbutton"
+                android:text="PAY" />
+
+            <ProgressBar
+                android:layout_toRightOf="@id/make_payment"
+                android:id="@+id/progress"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#f1f1f1"
+        android:visibility="gone">
+
+    </FrameLayout>
+</RelativeLayout>

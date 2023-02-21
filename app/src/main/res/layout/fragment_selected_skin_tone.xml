@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/margin_Top_Large"
+
+    tools:context=".fragments.SelectedSkinToneFragment">
+
+    <com.scarcamo.custom.CTextViewHeavy
+        android:id="@+id/title"
+        style="@style/CFontHeavy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_Top_very_Large"
+        android:gravity="center_horizontal"
+        android:text="THIS IS YOUR SKIN TONE"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="@dimen/Text_Size_medium" />
+
+    <com.scarcamo.custom.CTextViewThin
+
+        style="@style/CFontThin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_Top_medium"
+        android:layout_marginBottom="@dimen/margin_Top_very_Large"
+        android:gravity="center_horizontal"
+        android:text="YOU CAN CONTINUE WITH THIS OR YOU CAN SCAN AGAIN"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_Top_very_Large"
+        android:layout_marginBottom="@dimen/margin_Top_very_Large"
+        android:padding="1dp"
+        android:background="@drawable/border_light">
+
+        <ImageView
+            android:id="@+id/selectedColor"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            />
+
+        <com.scarcamo.custom.CTextViewHeavy
+            android:id="@+id/colorPercentage"
+            style="@style/CFontHeavy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_Top_very_Large"
+            android:layout_marginLeft="@dimen/margin_Top_very_Large"
+            android:layout_marginRight="@dimen/margin_Top_very_Large"
+            android:layout_marginStart="@dimen/margin_Top_very_Large"
+            android:layout_marginTop="@dimen/margin_Top_very_Large"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding_Large"
+        android:layout_marginLeft="@dimen/padding_Large"
+        android:layout_marginRight="@dimen/padding_Large"
+        android:layout_marginStart="@dimen/padding_Large"
+        android:layout_marginTop="@dimen/margin_Top_Large"
+        android:weightSum="2">
+
+        <com.scarcamo.custom.CButtonBold
+            android:id="@+id/confirmBtn"
+            style="@style/CFontBold"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/padding_small"
+            android:layout_marginTop="@dimen/margin_Top_Large"
+            android:layout_weight="1"
+            android:background="@drawable/greenbutton"
+            android:gravity="center_vertical|center"
+            android:paddingEnd="@dimen/padding_Large"
+            android:paddingLeft="@dimen/padding_Large"
+            android:paddingRight="@dimen/padding_Large"
+            android:paddingStart="@dimen/padding_Large"
+            android:text="Continue"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/Text_Size_Small"
+             />
+
+        <com.scarcamo.custom.CButtonBold
+            android:id="@+id/chooseBtn"
+            style="@style/CFontBold"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_Top_Large"
+            android:layout_weight="1"
+            android:background="@drawable/greenbutton"
+            android:gravity="center_vertical|center"
+            android:paddingEnd="@dimen/padding_small"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:paddingStart="@dimen/padding_small"
+            android:text="Scan Again"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/Text_Size_Small"
+            />
+    </LinearLayout>
+</LinearLayout>

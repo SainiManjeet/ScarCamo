@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/landing_page_bg"
+    android:orientation="vertical"
+
+    tools:context=".fragments.MyOrdersFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/toolbar_background">
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/check"/>
+
+    <com.scarcamo.custom.CTextViewHeavy
+        android:id="@+id/myUsername_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/margin_Top_small"
+        android:ems="10"
+        android:inputType="textPersonName"
+        style="@style/CFontHeavy"
+
+        android:text="THANK YOU!"
+        android:textColor="@color/colorBlack"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/Text_Size_Large"/>
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/fab_margin_large"
+        android:layout_marginRight="@dimen/fab_margin_large"
+        android:layout_marginStart="@dimen/fab_margin_large"
+        android:layout_marginLeft="@dimen/fab_margin_large"
+        android:layout_marginTop="@dimen/margin_Top_small"
+        android:background="@color/colorGrey" />
+
+    <com.scarcamo.custom.CTextViewThin
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/margin_Top_small"
+        android:ems="10"
+        android:inputType="textPersonName"
+        style="@style/CFontThin"
+
+        android:text="Your order is in progress"
+
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/Text_Size"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/fab_margin_large"
+        android:layout_marginRight="@dimen/fab_margin_large"
+        android:layout_marginStart="@dimen/fab_margin_large"
+        android:layout_marginLeft="@dimen/fab_margin_large"
+        android:layout_marginTop="@dimen/margin_Top_small"
+        android:background="@color/colorGrey" />
+</LinearLayout>

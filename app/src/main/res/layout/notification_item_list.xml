@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MyOrdersFragment"
+    android:layout_marginTop="?actionBarSize"
+    android:layout_marginBottom="?actionBarSize"
+    android:background="@color/colorWhite"
+
+
+    >
+
+
+    <com.scarcamo.custom.CTextViewHeavy
+        android:id="@+id/title"
+        style="@style/CFontHeavy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/Text_Size_Large"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="@dimen/margin_Top_medium"
+        android:text="NOTIFICATIONS" />
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/margin_Top_medium"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorGrey"/>
+
+    <TextView
+        android:id="@+id/noItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+
+        android:text="No Item Found"
+        android:layout_below="@id/divider"
+        android:paddingBottom="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_small"
+        android:gravity="center_horizontal|center_vertical"
+        android:visibility="gone"
+        android:textSize="@dimen/Text_Size"
+        />
+
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list"
+
+    android:name="com.scarcamo.fragments.NotificationItemFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/divider"
+    app:layoutManager="LinearLayoutManager"
+    tools:context=".fragments.NotificationItemFragment"
+    tools:listitem="@layout/fragment_item" />
+</RelativeLayout>

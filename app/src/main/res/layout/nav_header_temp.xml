@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="#e6c4b4"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.scarcamo.custom.CTextViewThin
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/nav_header_desc"
+        android:textStyle="italic"
+        android:textSize="@dimen/Text_Size_Large"
+        android:layout_marginLeft="@dimen/margin_left_right_Large"
+        android:layout_marginRight="@dimen/margin_left_right_Large"
+        android:paddingLeft="@dimen/padding_medium"
+        android:paddingRight="@dimen/padding_medium"
+        android:textColor="@color/colorWhite"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="This is your skin tone"
+        />
+
+
+
+</LinearLayout>

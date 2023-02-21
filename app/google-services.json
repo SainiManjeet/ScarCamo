@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1009263722332",
+    "firebase_url": "https://scarcamo-8925f.firebaseio.com",
+    "project_id": "scarcamo-8925f",
+    "storage_bucket": "scarcamo-8925f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009263722332:android:f434f7ea1ff19b0f",
+        "android_client_info": {
+          "package_name": "com.scarcamo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009263722332-iqa4oulcfctqb7rpjms9lc99fubcob2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3ZUI78lcBUGu--gXodNu34WtQqcl_ueo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

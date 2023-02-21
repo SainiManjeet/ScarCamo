@@ -1,0 +1,52 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_margin_large">26dp</dimen>
+    <dimen name="margin_bottom_small">10dp</dimen>
+    <dimen name="margin_bottom_medium">20dp</dimen>
+    <dimen name="margin_bottom_large">30dp</dimen>
+    <dimen name="margin_bottom_vlarge">40dp</dimen>
+    <dimen name="margin_Top_Large">30dp</dimen>
+    <dimen name="margin_Top_very_Large">40dp</dimen>
+    <dimen name="margin_Top_medium">20dp</dimen>
+    <dimen name="margin_Top_small">14dp</dimen>
+    <dimen name="margin_left_right_medium">20dp</dimen>
+    <dimen name="margin_left_right_small">10dp</dimen>
+    <dimen name="margin_left_right_Large">30dp</dimen>
+    <dimen name="about_us_screen_margin">80dp</dimen>
+    <dimen name="login_screen_margin">100dp</dimen>
+
+    <!--Padding-->
+    <dimen name="padding_medium">20dp</dimen>
+    <dimen name="padding_Large">30dp</dimen>
+    <dimen name="padding_VLarge">50dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+
+    <!--Text sizes-->
+    <dimen name="Text_Size_medium">20sp</dimen>
+    <dimen name="Text_Size_Large">26sp</dimen>
+    <dimen name="Text_Size_Small">14sp</dimen>
+    <dimen name="Text_Size_vSmall">12sp</dimen>
+    <dimen name="Text_Size">16sp</dimen>
+    <dimen name="Text_Size_price">22sp</dimen>
+    <dimen name="Text_Size_vLarge">36sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">90dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <!-- Activity color picker -->
+    <dimen name="activity_color_picker_pointer_size">8dp</dimen>
+    <dimen name="activity_color_picker_pointer_ring_size">48dp</dimen>
+    <dimen name="activity_color_picker_pointer_ring_thickness">8dp</dimen>
+    <dimen name="activity_color_picker_bottom_bar_height">100dp</dimen>
+    <dimen name="activity_color_picker_bottom_bar_height_half">36dp</dimen>
+
+
+
+    <!-- New text size-->
+    <dimen name="Text_Size_medium_new">20sp</dimen>
+
+</resources>
